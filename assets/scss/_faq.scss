@@ -1,0 +1,281 @@
+.elementor-accordion {
+    .elementor-tab-title {
+        .elementor-accordion-icon {
+            margin-top: 4px;
+            color: $theme-color !important;
+        }        
+        padding: 22px 20px !important;
+        font-weight: 500 !important;
+    }
+    .elementor-accordion-item {
+        border: 0px !important;
+        margin-top: 15px;
+        background: #f8f8f8;
+    }
+    .elementor-tab-content {
+        padding: 10px 25px 30px !important;
+        border-top: 0px !important;
+    }
+}
+.elementor-tab-title {
+    a {
+        color: $theme-color !important;
+    }
+}
+
+.accordion {
+
+    .accordion-item {
+        border: 1px solid #999;
+        margin-top: 20px;
+        border-radius: 8px;
+        background: transparent;
+
+        button.accordion-button { 
+            font-weight: 600;
+            color: $white;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            background-color: transparent;
+            padding: 16px 20px;
+
+            &::after {
+                content: "\f067";
+                background: transparent;
+                font-family: $fa;
+                font-weight: 300;
+                transition: all 0.3s ease-in-out !important;
+                width: 40px;
+                height: 40px;
+                background: #fff;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                color: $heading-color;
+                transition: all .3s ease-in-out;
+            }
+
+            &:not(.collapsed)::after {
+                content: "\f068";
+                background: transparent;
+                font-family: $fa;
+                font-weight: 300;
+                width: 40px;
+                height: 40px;
+                background: $theme-color;
+                border-radius: 50%;
+                line-height: 40px;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        .accordion-collapse { 
+
+            .accordion-body {
+                padding-right: 30px;
+                padding-top: 5px;
+                color: #e6e6e6;
+            }
+        }
+    }
+
+}
+
+.faq-accordion-2 { 
+    .accordion { 
+        list-style-type: none;
+        counter-reset: css-counter 0;
+
+        @media (max-width: 500px) {
+            padding: 30px 15px
+        }
+
+
+        .accordion-item { 
+            border: 0;
+            border-radius: 0;
+            counter-increment: css-counter 1;
+            position: relative;
+            z-index: 1;
+            padding-top: 20px;
+            background: transparent;
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            &::before {
+                position: absolute;
+                left: 25px;
+                top: 0;
+                content: "";
+                border: 1px dashed $second-color;
+                width: 1px;
+                height: 100%;
+                z-index: -1;
+                transform: translateX(-50%);
+                opacity: .5;
+            }
+
+            .accordion-header {
+                font-size: inherit;
+                line-height: inherit;
+                position: relative;
+                z-index: 1;
+
+                &:focus {
+                    outline: 0;
+                    border: 0;
+                }
+                
+                .accordion-button {
+                    padding-left: 70px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $theme-color;
+                    overflow: hidden;
+                    background-color: transparent;
+                    padding-top: 10px;
+
+                    @media (max-width: 500px) {
+                        padding: 0px;
+                        padding-left: 60px;
+                    }
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    &:not(.collapsed) {
+                        color: $theme-color;
+                        background-color: transparent;
+                        box-shadow: none;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+
+                    &::before {
+                        content: counter(css-counter);
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        background: #fff;
+                        border: 1px solid #ebedf2;
+                        border-radius: 50px;
+                        color: $second-color;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 50px;
+                        text-align: center;
+                        left: 0;
+                    }
+
+                }
+            }
+
+            .accordion-collapse { 
+
+                .accordion-body { 
+                    padding-left: 70px;
+
+                    @media (max-width: 500px) {
+                        padding-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.investors-inquire-card { 
+    background: $third-color;
+    padding: 40px;
+
+	.investors-title { 
+        border-bottom: 3px solid $white;
+        
+		h2 { 
+            font-size: 26px;
+            text-transform: capitalize;
+            position: relative;
+		}
+	}
+
+	.investor-img { 
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        line-height: 200px;
+        margin: 0px auto;
+        background-color: #fff;
+        margin-top: 30px;
+        margin-bottom: 10px;
+	}
+
+	.investors-data { 
+
+		h4 { 
+            margin-bottom: 5px;
+		}
+
+		h6 { 
+            font-weight: 500;
+            margin-bottom: 5px;
+		}
+
+		.investors-contact { 
+            margin-top: 5px;
+
+			p { 
+                i {
+                    margin-right: 5px;
+                }
+			}
+		}
+	}
+
+	.social-profile { 
+
+		a { 
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            margin: 0px 3px;
+            font-size: 14px;
+            margin-top: 5px;
+
+            &:hover {
+                background-color: #fff;
+                color: $third-color !important;
+            }
+		}
+	}
+}
+
+.faq-wrapper {
+    position: relative;
+    z-index: 1;
+
+    .faq-banner-half {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 48%;
+        height: 100%;
+        z-index: -1;
+        content: "";
+
+    }
+}
+
+.faq-img {
+    border-radius: 8px;
+    overflow: hidden;
+}

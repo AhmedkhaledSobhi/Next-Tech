@@ -1,0 +1,80 @@
+/*
+Template: QuanTech
+Author: Modina Theme
+Author URI: https://themeforest.net/user/modinatheme/
+Description: IT Solution & Technology HTML  Template
+Version: 1.2.0
+*/
+
+
+// BASIC
+@import 'basic';
+// MIXIN
+@import 'variables';
+// TYPOGRAPHY
+@import 'typography';
+// MIX
+@import 'mix';
+// HELPER
+@import 'helper';
+// ANIMATION
+@import 'animation';
+// Button 
+@import 'btn';
+// Preloader 
+@import 'preloader';
+
+// WP Default CSS - Style
+// @import 'wp';
+
+/* ----------------------------------
+    Template Section Styles
+ ------------------------------------*/
+
+// Menu - Header Section 
+@import 'header';
+
+// Hero Slide - Section 
+@import 'hero';
+
+// Section Title - Heading 
+@import 'section';
+
+// About - Section 
+@import 'about';
+
+// Features - Section 
+@import 'features';
+
+// services - Section 
+@import 'services';
+
+// testimonial - Section 
+@import 'testimonial';
+
+// price - Section 
+@import 'price';
+
+// Call To Action - Section 
+@import 'cta';
+
+// team - Section 
+@import 'team';
+
+// funfact - Section 
+@import 'funfact';
+
+// project - Section 
+@import 'project';
+
+// FAQ - Section 
+@import 'faq';
+
+// Blog - Section 
+@import 'blog';
+
+// Contact Us - Section 
+@import 'contact';
+
+// footer - Section 
+@import 'footer';
