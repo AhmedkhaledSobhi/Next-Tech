@@ -102,7 +102,8 @@
         height: 80%;
         content: "";
         z-index: -1;
-        background: linear-gradient(135.01deg, $second-color -10.43%, $third-color 100%);
+        background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
+        // background: linear-gradient(135.01deg, $second-color -10.43%, $third-color 100%);
         transition: all .35s ease-in-out;
         opacity: 0;
         visibility: hidden;

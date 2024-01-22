@@ -1,6 +1,43 @@
 /* ----------------------------------
 	Contact Us Section Styles
  ------------------------------------ */
+ #myModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99999999999999;
+    flex-direction: column;
+    align-content:center !important;
+    text-align: center;
+    h3 , i {
+        color: green;
+    }
+    button {
+        padding: 10px ;
+        border-radius: 20px;
+        font-size: medium;
+        font-weight: 500;
+        transition: all 1s;
+        &:hover {
+            color: $black;
+            background-color: $red;
+        }
+    }
+}
+
+
+
+
+// =======================================================
+
+
 .request-a-quote-section {
     position: relative;
 
@@ -264,7 +301,8 @@
     background-color: $section-bg;
     padding: 40px;
     margin-bottom: 30px;
-    transition: all .3s ease-in-out;
+    border-radius: 10px;
+    transition: all .3s ease-in-out !important;
 
     @media (max-width: 585px) {
         padding: 30px;
@@ -280,11 +318,13 @@
     }
 
     &:hover {
-        background-color: $third-color;
+        // background-color: $third-color;
+        background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
 
         .icon {
             color: $heading-color !important;
-            background-color: $theme-color !important;
+            // background-color: $theme-color !important;
+            background-color: $white !important;
         }
 
         .bottom-part {

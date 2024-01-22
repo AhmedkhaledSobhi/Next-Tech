@@ -1,5 +1,42 @@
+
+.icon-whatsApp {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 9999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 35px;
+    width: 40px;
+    height: 45px;
+    background-color:#25d366 ;
+    i {
+        transition: all 2s;
+        font-size: 30px;
+        color: white;
+    }
+    &:hover i{
+        color:dodgerblue !important;
+    }
+    // @media (max-width :768px) {
+    //     bottom: 60px;
+    //     right: 10px;
+    //     padding: 20px ;
+    //     i {
+    //         font-size: 20px;
+    //     }
+    // }
+}
+
+
 footer {
-    background: $heading-color;
+    // background: $heading-color;
+
+    background: -webkit-linear-gradient(45deg,rgba(20, 28, 39,1),rgba(35, 50, 73,1)) !important;
+
+
 
     ul {
         margin: 0px;
@@ -12,8 +49,11 @@ footer {
     }
 
     .footer-widgets-wrapper {
-        padding: 80px 0px 120px;
-        padding-top: 265px;
+        // padding: 80px 0px 120px;
+        // padding-top: 265px;
+        p {
+           color: $white !important; 
+        }
 
         @media (max-width: 991px) {
             padding: 160px 0px 100px;
@@ -35,23 +75,29 @@ footer {
             }
 
             h3 {
-                color: $white;
+                font-size: 32px;
+                color: $white !important;
             }
         }
 
         ul {
 
             li {
-                
+                span {
+                    font-size: 17px;
+                    color: $white !important;
+                }
                 a {
                     margin-top: 8px;
-                    color: $textcolor;
+                    color: $white !important;
+
                     display: block;
                     text-transform: capitalize;
-                    font-size: 16px;
+                    font-size: 17px;
 
                     &:hover {
-                        color: $theme-color !important;
+                        // color: $theme-color !important;
+                        color: $blue !important;
                     }
                 }
             }
@@ -77,7 +123,7 @@ footer {
     }
 
     .footer-bottom {
-        background-color: $theme-color;
+        // background-color: $theme-color;
 
         @media (max-width: 767px) {
             text-align: center;
@@ -91,7 +137,7 @@ footer {
             }
     
             p, b, strong {
-                color: $heading-color;
+                color: $second-color;
                 text-transform: capitalize;
             }
     
@@ -125,13 +171,17 @@ footer {
                     border: 1px solid transparent;
                     border-radius: 50% !important;
                     padding: 5px !important;
-                    width: 35px !important;
-                    height: 35px !important;
+                    width: 45px !important;
+                    height: 45px !important;
                     transition: all 2s;
+                    i {
+                        font-size: 25px;
+                    }
                     &:hover {
                         // border-color: $second-color;
                         border-color: darken($color: $second-color, $amount: 9);
                         color: $second-color;
+                        background-color: $white;
                     }
                 }
 
@@ -148,20 +198,26 @@ footer {
 
 	.single-contact-info {
         margin-top: 5px;
+        a {
+            color: $white !important;
+
+        }
 
 		.icon { 
             float: left;
             overflow: hidden;
             margin-right: 15px;
-            color: $theme-color;
+            // color: $theme-color;
             padding-left: 2px;
-
+            &.id1 {
+                color: $pink;
+            }
             &.id2 {
-                color: $theme-color;
+                color: $pink;
             }
 
             &.id3 {
-                color: $theme-color;
+                color: $pink;
             }
 		}
 

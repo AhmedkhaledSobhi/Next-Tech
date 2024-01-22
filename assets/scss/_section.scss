@@ -98,6 +98,8 @@
             width: 10px;
             height: 10px;
             background: linear-gradient(180deg, $second-color 0%, $third-color 100%);
+            // background: -webkit-linear-gradient(45deg,#141c27,#233249);
+
             content: "";
             left: 0;
             border-radius: 50%;
@@ -118,7 +120,9 @@
 }
 
 .bg-gradient {
-    background: linear-gradient(115.02deg, #5F2DEE 51.01%, #256AD7 102.64%) !important;
+    background: -webkit-linear-gradient(45deg,rgba(20, 28, 39,1),rgba(35, 50, 73,1)) !important;
+
+    // background: linear-gradient(115.02deg, #5F2DEE 51.01%, #256AD7 102.64%) !important;
     overflow: hidden;
     z-index: 2;
 
@@ -142,7 +146,7 @@
         left: 0;
         top: 0;
         content: "";
-        background: $theme-color;
+        // background: $theme-color;
         height: 100%;
         z-index: -1;
 

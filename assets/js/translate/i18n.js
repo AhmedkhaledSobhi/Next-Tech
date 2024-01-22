@@ -30,6 +30,8 @@ const translations = {
         "Get Consultant":"Get Consultant",
       // }
       // Our Feature:{
+        "QA & Testing":"QA & Testing",
+        "Turn to our experts to perform compr":"Turn to our to perform compr ehensive, multi-stage testing and au dicing of your software",
         "Our Feature":"Our Feature",
         "We Help you Build":"We Help you Build and Grow Business",
         "It Solutions":"It Solutions",
@@ -88,6 +90,17 @@ const translations = {
 
         "Our Price":"Our Price",
         "Best Pricing Plans":"Best Pricing Plans",
+        "USD Billed monthly":"USD Billed monthly",
+        "1 Warehouse":"1 Warehouse",
+      // ==========================================
+        "pro":"pro",
+        "Basic plan for small companies":"Basic plan for small companies with one month subscription", 
+      // ==========================================
+        "Business":"Business",
+        "Standard plan for small companies":"Standard plan for small companies with one month subscription",
+      // ==========================================
+        "Advanced":"Advanced",
+        "Advanced plan for big companies":"Advanced plan for big companies with one month subscription",
 
     // }
 
@@ -197,11 +210,13 @@ const translations = {
 
       // home-Slider:{
         "NextTech IT Systems":"NextTech لأنظمة تكنولوجيا المعلومات",
-        "Creative Idea":"فكرة إبداعية لمنتجات ممتازة",
+        "Creative Idea":"شركة NextTech للبرمجة والتطوير",
         "We are 100+ professional software":"نحن أكثر من 100 مهندس برمجيات محترف ولدينا أكثر من 10 سنوات من الخبرة في تقديم منتجات فائقة الجودة",
         "Get Consultant":"احصل على استشارة",
       // }
       // Our Feature:{
+        "QA & Testing":"ضمان الجودة والاختبار",
+        "Turn to our experts to perform compr":"انتقل إلى خبرائنا لإجراء اختبارات شاملة ومتعددة المراحل ومراجعة لبرامجك",
         "Our Feature":"الميزة لدينا",
         "We Help you Build":"نحن نساعدك على بناء أعمالك وتنميتها",
         "It Solutions":"حلولها",
@@ -234,7 +249,9 @@ const translations = {
 
       // section Our Services:{
         "IT Consultancy":"استشارات تكنولوجيا المعلومات",
-        "We Offer a Wide Variety of IT Services":"نقدّم مجموعة متنوعة من خدمات تكنولوجيا المعلومات",
+        // "We Offer a Wide Variety of IT Services":"نقدّم مجموعة متنوعة من خدمات تكنولوجيا المعلومات",
+
+        "We Offer a Wide Variety of IT Services":"خدماتنا",
         "We carry more than just good coding":"نحن نحمل أكثر من مجرد مهارات ترميز جيدة. خبرتنا تجعلنا نتميز عن غيرنا من مطوري الويب",
         "Turn to our experts to perform":"انتقل إلى خبرائنا لإجراء اختبارات شاملة ومتعددة المراحل ومراجعة لبرامجك",
         "Build the product you":"قم ببناء المنتج الذي تحتاجه في الوقت المحدد مع فريق من ذوي الخبرة يستخدم عملية تصميم واضحة وفعالة",
@@ -265,6 +282,17 @@ const translations = {
 
         "Our Price":"سعرنا",
         "Best Pricing Plans":"أفضل خطط التسعير",
+        "USD Billed monthly":"فاتورة بالدولار الأمريكي شهريًا",
+      // ============================================
+        "pro":"طليعة",
+        "Basic plan for small companies":"الخطة الأساسية للشركات الصغيرة مع اشتراك لمدة شهر واحد",
+        "1 Warehouse":"مستودع1",
+      // ============================================
+        "Business":"عمل",
+        "Standard plan for small companies":"الخطة القياسية للشركات الصغيرة مع اشتراك لمدة شهر واحد",
+      // ============================================ 
+        "Advanced":"متقدم",
+        "Advanced plan for big companies":"الخطة متقدمة للشركات الكبرى مع اشتراك لمدة شهر واحد",
 
       // }
 

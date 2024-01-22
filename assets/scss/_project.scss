@@ -1,3 +1,37 @@
+.slide-img {
+    display: none;
+    width: 35%;
+    border: 2px solid ;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999999999999999999;
+    .close-slide {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        i {
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width:767px) {
+        width: 95%;
+        .close-slide {
+            top: 10px;
+            right: 10px;
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+   
+}
+
 
 .project-details-contents {
     border-bottom: 1px solid #EBEDF2;
@@ -52,28 +86,44 @@
         transition: all .35s ease-in-out;
     }
 
+    .item-plus-link{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    }
 	.plus-link { 
-        width: 60px;
-        height: 60px;
-        text-align: center;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin: 8px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
         line-height: 60px;
         border: 2px solid #fff;
         font-size: 24px;
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -50%);
         color: #fff;
         z-index: 2;
         transition: all .5s ease-in-out;
         opacity: 0;
         visibility: hidden;
+        cursor: pointer;
 
         &:hover {
             background: $theme-color;
             color: $heading-color !important;
             border-color: $theme-color;
+        }
+
+        @media (max-width:767px) {
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
         }
 	}
 
@@ -165,7 +215,9 @@
         }
 
         &.active, &:hover {
-            background-color: $theme-color;
+            color: $white;
+            background: -webkit-linear-gradient(45deg,rgb(36, 60, 94),rgb(26, 105, 223)) !important;
+            // background-color: $theme-color;
         }
     }
 

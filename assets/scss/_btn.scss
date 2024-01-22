@@ -17,7 +17,8 @@
     font-size: 16px;
     font-weight: 600;
     color: $heading-color;
-    background: $theme-color;
+    // background: $theme-color;
+    background-color: #2ab9f7;
     transition: all .4s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 
@@ -65,7 +66,7 @@
     }
 
     &:hover {
-        background: linear-gradient(93.01deg, #5F2DEE 7.72%, #256AD7 88.32%);
+        background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
         color: $white;
     }
 

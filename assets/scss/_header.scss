@@ -541,7 +541,9 @@ header {
 
 
 .top-bar-wrapper {
-    background-color: $theme-color;
+    // background: -webkit-linear-gradient(45deg,rgb(73, 95, 126),rgb(63, 103, 163)) !important;
+
+    background: -webkit-linear-gradient(45deg,rgba(20, 28, 39,1),rgba(35, 50, 73,1)) !important;
     padding: 10px 0px;
     position: relative;
     overflow: hidden;
@@ -569,7 +571,7 @@ header {
 .top-left {
     a {
         font-weight: 500;
-        color: $heading-color;
+        color: $white;
         margin-right: 35px;
         font-size: 15px;
 
@@ -595,10 +597,12 @@ header {
     a {
         margin-left: 15px;
         font-weight: 500;
-        color: #fff;
+        color: $white;
+        transition: all 0.7s;
 
         &:hover {
-            color: $theme-color;
+            color: $black;
+
         }
     }
 }

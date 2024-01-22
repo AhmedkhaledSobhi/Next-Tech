@@ -1,8 +1,8 @@
 // LocalizationApp.js
 
-let currentLanguage = 'en';
+let currentLanguage = 'ar';
 
-let currentDirction = "ltr"
+let currentDirction = "rtl"
 
 function changeLanguage() {
   currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';

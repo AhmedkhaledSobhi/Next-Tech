@@ -16,8 +16,10 @@
         .spinner {
             animation: spinner 1s infinite linear;
             border-radius: 50%;
-            border: 3px solid $third-color;
-            border-top-color: $theme-color;
+            border: 3px solid $secondary;
+
+            border-top-color: $second-color;
+            border-bottom-color: $second-color ;
             height: 9em;
             margin: 0 auto 3.5em auto;
             width: 9em;
@@ -87,9 +89,10 @@
 
     p {
         font-weight: 700;
+        font-size: 23px;
         text-transform: uppercase;
-        letter-spacing: 8px;
-        color: $third-color;
+        letter-spacing:10px;
+        color: $second-color;
     }
 
     .loader {
