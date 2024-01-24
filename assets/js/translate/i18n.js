@@ -127,6 +127,10 @@ const translations = {
       "Enter Email Address":"Enter Email Address",
       "Enter Subject":"Enter Subject",
 
+      "Form submitted successfully!":"Form submitted successfully!",
+      "Thank you for your submission":"Thank you for your submission",
+      "Close":"Close",
+
     // }
 
     // Our Projects:{
@@ -317,6 +321,10 @@ const translations = {
         "Enter Email Address":"أدخل عنوان البريد الالكتروني",
         "Enter Subject":"أدخل الموضوع",
 
+        "Form submitted successfully!":"تم ارسال الرساله بالنجاح!",
+        "Thank you for your submission":"شكرا لتواصلك معانا ",
+        "Close":"اغلاق",
+
       // }
 
       // Our Projects:{
@@ -331,7 +339,7 @@ const translations = {
       //
 
     // footer:{
-        "Get A Quote":"إقتبس",
+        "Get A Quote":"إرسال",
         "Need Any Consultations or":"بحاجة إلى أي مشاورات أو العمل على المشاريع القادمة",
       // NextTech :{
         "Footer-NextTech":"NextTech هي شركة تعمل في مجال حلول تكنولوجيا المعلومات والتكنولوجيا، لذا يجب عليك اختيار سمة NextTech. بدء التشغيل والتسويق الرقمي وخدمات وكالات تكنولوجيا المعلومات ومستشار تكنولوجيا المعلومات والأعمال التقنية",

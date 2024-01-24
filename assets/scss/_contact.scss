@@ -274,17 +274,21 @@
 
     input[type='submit'],
     .submit-btn {
-        background: $theme-color;
+        background: $second-color;
+        border-radius: 8px;
         color: $heading-color;
-        font-weight: 600;
-        line-height: 1;
-        padding: 25px 40px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 38px;
+        padding: 10px 20px;
         transition: all .3s ease-in-out;
         width: 280px;
 
         &.active,
         &:hover {
-            background-color: $theme-color;
+            background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
+            color: $white;
+            // background-color: $theme-color;
         }
 
         i {
@@ -352,12 +356,13 @@
             font-size: 20px;
             line-height: 70px;
             border-radius: 50%;
-            background-color: $theme-color;
+            background-color: #7cd6fd;
             text-align: center;
             float: left;
             color: $heading-color;
             overflow: hidden;
             margin-right: 20px;
+            font-size: 25px;
         }
 
         .title {
@@ -380,6 +385,7 @@
             float: right;
             overflow: hidden;
             margin-left: 20px;
+           
         }
 
         .info {

@@ -1,13 +1,25 @@
 // LocalizationApp.js
 
-let currentLanguage = 'ar';
+// let currentLanguage = 'ar';
+// let currentDirction = "rtl"
 
-let currentDirction = "rtl"
+
+// Function to get the saved language and direction from local storage
+function getSavedLanguageAndDirection() {
+  const savedLanguage = localStorage.getItem('currentLanguage');
+  const savedDirection = localStorage.getItem('currentDirection');
+  return { language: savedLanguage || 'ar', direction: savedDirection || 'rtl' };
+}
+
+let { language: currentLanguage, direction: currentDirection } = getSavedLanguageAndDirection();
 
 function changeLanguage() {
   currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-  currentDirction = currentDirction === 'ltr' ? 'rtl' : 'ltr';
+  currentDirection = currentDirection === 'ltr' ? 'rtl' : 'ltr';
   applyTranslations();
+
+  localStorage.setItem('currentLanguage', currentLanguage);
+  localStorage.setItem('currentDirection', currentDirection);
 }
 
 function applyTranslations() {
@@ -25,7 +37,7 @@ function applyTranslations() {
 
   elementsDir.forEach((element)=>{
     // const dirs = element.getAttribute('dir');
-    element.dir=currentDirction;
+    element.dir=currentDirection;
   })
 
   elements.forEach(element => {
@@ -36,7 +48,7 @@ function applyTranslations() {
   });
 }
 
-
-
 // Initial application of translations
 applyTranslations();
+
+

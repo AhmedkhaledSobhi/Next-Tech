@@ -1,12 +1,10 @@
+
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     submitForm(e);
 });
 
-
 function submitForm(e) {
-
-    e.preventDefault()
-
+    e.preventDefault();
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
@@ -22,20 +20,14 @@ function submitForm(e) {
     formData.append('phone', phone);
     formData.append('timestamp', timestamp);
 
-
-
     sendDataToGoogleSheets(formData);
 }
 
-
 function sendDataToGoogleSheets(formData) {
-
-    // const url = 'https://script.google.com/macros/s/AKfycbxudk7SBuqNypbL-xECACX6_Pad-hRQWPL8bYwup6cysQ6ekKrC56l8_Ai_mEekk2bVkg/exec'
 
     const url = 'https://script.google.com/macros/s/AKfycbwFzEqih6j4HlkTvGk4r8qrrUJidzA24FLPr_Mj1ECSCBbVhHG0g9csf4ZbOerMIGJC/exec';
 
     fetch(url, {
-        
             method: 'POST',
             body: formData 
         })
@@ -43,13 +35,11 @@ function sendDataToGoogleSheets(formData) {
         .then(result => {
             console.log('Data sent successfully:', result);
             displayModal();
-
         })
         .catch(error => {
             console.error('Error sending data:', error);
         });
 }
-
 
 
 function displayModal() {

@@ -15,7 +15,7 @@
 
             a { 
                 cursor: default;
-                background: linear-gradient(93.01deg, #5F2DEE 7.72%, #256AD7 88.32%);
+                background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
                 color: $white !important;
             }
         }
@@ -43,7 +43,8 @@
 		a { 
             display: inline-block;
             padding: 10px 45px;
-            background: $theme-color;
+            // background: $theme-color;
+            background-color: #7cd6fd;
             color: $heading-color !important;
             border-radius: 4px;
 		}

@@ -736,7 +736,8 @@ header {
         left: 0;
         content: "";
         top: 0;
-        background: linear-gradient(95.06deg, #5F2DEE 37.5%, #256AD7 109.04%);
+        background: -webkit-linear-gradient(45deg,rgba(28, 60, 102, 0.61),rgba(41, 126, 253, 0.712)) !important;
+        // background: linear-gradient(95.06deg, #5F2DEE 37.5%, #256AD7 109.04%);
         opacity: 0.48;
         width: 100%;
         height: 100%;
