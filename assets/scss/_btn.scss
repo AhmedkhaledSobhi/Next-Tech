@@ -181,12 +181,15 @@
             border-radius: 30px;
             width: 12px;
             height: 12px;
-            background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+            background-color: #2ab9f7;
+            // background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
             transition: all .3s ease-in-out;
-            opacity: .2;
+            opacity: .4;
 
             &:hover {
-                background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+                background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
+
+                // background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
                 opacity: 1;
             }
 
@@ -209,7 +212,7 @@
 
         &.slick-active {
             button {
-                background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+                background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
                 opacity: 1;
 
                 &::before {

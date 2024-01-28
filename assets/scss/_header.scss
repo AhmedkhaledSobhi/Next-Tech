@@ -615,7 +615,8 @@ header {
 
 .action-bar {
     .single-info-element {
-        margin: 15px auto;
+        padding: 15px 0;
+        background-color: brown;
 
         .icon {
             color: $white;
@@ -838,15 +839,15 @@ header {
     position: fixed;
     // right: -380px;
     @if currentDirection == 'ltr' {
-        right:-410px;
+        right:-390px;
         left: 0px;
     } @else {
         right: 0px;
-        left: -410px;
+        left: -390px;
     }
     
     top: 0;
-    width: 350px;
+    width: 340px;
     height: 100vh;
     scroll-behavior: smooth;
     overflow-y: scroll;

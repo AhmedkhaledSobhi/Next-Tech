@@ -2298,12 +2298,12 @@ nav .breadcrumb li {
   border-radius: 30px;
   width: 12px;
   height: 12px;
-  background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+  background-color: #2ab9f7;
   transition: all 0.3s ease-in-out;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 .circle-dots li button:hover {
-  background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+  background: -webkit-linear-gradient(45deg, rgb(26, 53, 92), rgb(26, 105, 223)) !important;
   opacity: 1;
 }
 .circle-dots li button::before {
@@ -2322,7 +2322,7 @@ nav .breadcrumb li {
   transition: all 0.3s ease-in-out;
 }
 .circle-dots li.slick-active button {
-  background: linear-gradient(180deg, #256AD7 0%, #5F2DEE 100%);
+  background: -webkit-linear-gradient(45deg, rgb(26, 53, 92), rgb(26, 105, 223)) !important;
   opacity: 1;
 }
 .circle-dots li.slick-active button::before {
@@ -2953,7 +2953,8 @@ header.header-3 .main-menu ul > li > ul ul {
 }
 
 .action-bar .single-info-element {
-  margin: 15px auto;
+  padding: 15px 0;
+  background-color: brown;
 }
 .action-bar .single-info-element .icon {
   color: #FFF;
@@ -3134,9 +3135,9 @@ header.header-3 .main-menu ul > li > ul ul {
 .mobile-nav {
   position: fixed;
   right: 0px;
-  left: -410px;
+  left: -390px;
   top: 0;
-  width: 350px;
+  width: 340px;
   height: 100vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
