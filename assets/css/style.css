@@ -2953,8 +2953,7 @@ header.header-3 .main-menu ul > li > ul ul {
 }
 
 .action-bar .single-info-element {
-  padding: 15px 0;
-  background-color: brown;
+  padding: 10px 0;
 }
 .action-bar .single-info-element .icon {
   color: #FFF;
@@ -2993,7 +2992,7 @@ header.header-3 .main-menu ul > li > ul ul {
   margin-bottom: 0px;
   font-size: 16px;
   text-transform: capitalize;
-  margin-top: -4px;
+  margin-top: 1px;
   margin-bottom: -1px;
 }
 .single-info-element .text span {
