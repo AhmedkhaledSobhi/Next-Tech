@@ -63,7 +63,7 @@ function closeNav() {
 
 function apenNav() {
   const mobileNav = document.getElementById('mobile-nav');
-  mobileNav.style.right = currentDirection === 'ltr' ? '10px' : '';
-  mobileNav.style.left = currentDirection === 'rtl' ? '5px' : '';
+  mobileNav.style.right = currentDirection === 'ltr' ? '0px' : '';
+  mobileNav.style.left = currentDirection === 'rtl' ? '30px' : '';
 }
 
