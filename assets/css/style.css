@@ -2952,9 +2952,6 @@ header.header-3 .main-menu ul > li > ul ul {
   color: #0D0D0F;
 }
 
-.action-bar .single-info-element {
-  margin-bottom: 25px;
-}
 .action-bar .single-info-element .icon {
   color: #FFF;
   font-size: 26px;
@@ -3134,9 +3131,9 @@ header.header-3 .main-menu ul > li > ul ul {
 .mobile-nav {
   position: fixed;
   right: 0px;
-  left: -380px;
+  left: -410px;
   top: 0;
-  width: 330px;
+  width: 370px;
   height: 100vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
