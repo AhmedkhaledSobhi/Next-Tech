@@ -3133,21 +3133,22 @@ header.header-3 .main-menu ul > li > ul ul {
 
 .mobile-nav {
   position: fixed;
-  right: -380px;
+  right: 0px;
+  left: -380px;
   top: 0;
-  width: 320px;
+  width: 330px;
   height: 100vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
-  transition: right 0.5s ease-in;
-  background-color: rgba(37, 105, 215, 0.1);
+  transition: all 0.5s;
+  background: -webkit-linear-gradient(45deg, rgb(26, 53, 92), rgb(26, 105, 223)) !important;
   padding: 20px;
   z-index: 9999;
-  box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
   /* Vertical Menu Style */
 }
 .mobile-nav.show {
-  right: 0px;
+  right: auto;
+  left: 0;
 }
 .mobile-nav .close-nav {
   border: 0;
@@ -3178,6 +3179,7 @@ header.header-3 .main-menu ul > li > ul ul {
   flex-direction: column;
 }
 .mobile-nav .sidebar-nav .metismenu a {
+  font-size: 20px;
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -3221,7 +3223,8 @@ header.header-3 .main-menu ul > li > ul ul {
 .mobile-nav .sidebar-nav .metismenu a:active {
   text-decoration: none;
   color: #0D0D0F;
-  background: rgba(155, 147, 145, 0.4196078431);
+  background-color: #2ab9f7;
+  color: #FFF !important;
 }
 
 #hamburger {
@@ -3265,7 +3268,6 @@ header.header-3 .main-menu ul > li > ul ul {
   z-index: 9999999;
   opacity: 0;
   visibility: hidden;
-  right: -30%;
   transition: all 0.5s ease-in-out;
   background-color: #2ab9f7;
   box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);

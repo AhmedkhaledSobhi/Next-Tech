@@ -20,24 +20,32 @@ function changeLanguage() {
 
   localStorage.setItem('currentLanguage', currentLanguage);
   localStorage.setItem('currentDirection', currentDirection);
+
+    // Update the direction of the mobile navigation
+    // const mobileNav = document.getElementById('mobile-nav');
+    // mobileNav.style.right = currentDirection === 'rtl' ? '0px' : '';
+    // mobileNav.style.left = currentDirection === 'ltr' ? '0px' : '';
 }
 
 function applyTranslations() {
   const elements = document.querySelectorAll('[data-i18n]');
-  const elementsDir =document.querySelectorAll('[dir]');
- 
+  const elementsDir = document.querySelectorAll('[dir]');
 
-  elements.forEach(elementd=>{
-    const key=elementd.getAttribute('placeholder');
-    
+
+  elements.forEach(elementd => {
+    const key = elementd.getAttribute('placeholder');
+
     if (translations[currentLanguage][key]) {
       elementd.placeholder = translations[currentLanguage][key];
     }
   })
 
-  elementsDir.forEach((element)=>{
+  elementsDir.forEach((element) => {
     // const dirs = element.getAttribute('dir');
-    element.dir=currentDirection;
+    element.dir = currentDirection;
+
+   
+    
   })
 
   elements.forEach(element => {
@@ -52,3 +60,17 @@ function applyTranslations() {
 applyTranslations();
 
 
+function sss() {
+  const mobileNav = document.getElementById('mobile-nav');
+  mobileNav.style.right = currentDirection === 'ltr' ? '350px' : '';
+  mobileNav.style.left = currentDirection === 'rtl' ? '350px' : '';
+}
+
+function apenNav() {
+  console.log(currentDirection);
+  const mobileNav = document.getElementById('mobile-nav');
+  mobileNav.style.right = currentDirection === 'ltr' ? '20px' : '';
+  mobileNav.style.left = currentDirection === 'rtl' ? '20px' : '';
+}
+
+// apenNav()
