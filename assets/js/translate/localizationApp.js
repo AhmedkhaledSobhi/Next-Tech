@@ -20,11 +20,6 @@ function changeLanguage() {
 
   localStorage.setItem('currentLanguage', currentLanguage);
   localStorage.setItem('currentDirection', currentDirection);
-
-    // Update the direction of the mobile navigation
-    // const mobileNav = document.getElementById('mobile-nav');
-    // mobileNav.style.right = currentDirection === 'rtl' ? '0px' : '';
-    // mobileNav.style.left = currentDirection === 'ltr' ? '0px' : '';
 }
 
 function applyTranslations() {
@@ -60,17 +55,15 @@ function applyTranslations() {
 applyTranslations();
 
 
-function sss() {
+function closeNav() {
   const mobileNav = document.getElementById('mobile-nav');
   mobileNav.style.right = currentDirection === 'ltr' ? '350px' : '';
   mobileNav.style.left = currentDirection === 'rtl' ? '350px' : '';
 }
 
 function apenNav() {
-  console.log(currentDirection);
   const mobileNav = document.getElementById('mobile-nav');
   mobileNav.style.right = currentDirection === 'ltr' ? '20px' : '';
   mobileNav.style.left = currentDirection === 'rtl' ? '20px' : '';
 }
 
-// apenNav()

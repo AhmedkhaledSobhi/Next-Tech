@@ -126,7 +126,6 @@
                     <div class="menu-wrap">
                         <div class="main-menu">
                             <ul data-i18n="ltr">
-                       
                                 <li><a href="index.html" data-i18n="Home">Home</a></li>
                                 <li><a href="about.html" data-i18n="About">About</a> </li>
                                 <li><a href="services.html" data-i18n="services">services</a></li>
@@ -145,15 +144,15 @@
                     <div class="mobile-nav-wrap">
                         <div class="d-flex justify-content-around align-items-center">
                             <a class="" onclick="changeLanguage()" data-i18n="toggle-language">En</a>
-                            <div id="hamburger">
+                            <div id="hamburger" onclick="apenNav()">
                                 <i class="fal fa-bars text-black"></i>
                             </div>
                         </div>
                         
                         <!-- mobile menu - responsive menu  -->
 
-                        <div class="mobile-nav">
-                            <button type="button" class="close-nav">
+                        <div id="mobile-nav" class="mobile-nav">
+                            <button type="button" class="close-nav" onclick="closeNav()">
                                 <i class="fal fa-times-circle"></i>
                             </button>
                             
@@ -167,12 +166,12 @@
                                 </ul>
                             </nav>
 
-                            <div class="action-bar text-white">
+                            <div dir="ltr" class="action-bar text-white">
                                 <div class="single-info-element">
-                                    <div class="icon pe-3">
+                                    <div dir="ltr" class="icon ps-3">
                                         <i class="fal fa-map-marked-alt"></i>
                                     </div>
-                                    <div dir="rtl" class="text ">
+                                    <div class="text ">
                                         <h5 data-i18n="visit our location">visit our location:</h5>
                                         <a href="https://maps.app.goo.gl/SELaG2mGtY6fbebZ9" target="_blank">
                                             <span data-i18n="our location">Gökevler Mah, Esenyurt/İstanbul</span>
@@ -180,16 +179,16 @@
                                     </div>
                                 </div>
                                 <div class="single-info-element">
-                                    <div class="icon pe-2">
+                                    <div class="icon ps-4">
                                         <i class="fal fa-clock"></i>
                                     </div>
-                                    <div class="text pe">
+                                    <div class="text">
                                         <h5 data-i18n="Opening Hours">Opening Hours:</h5>
                                         <span data-i18n="work hours">Mon-Fri 8am-5pm</span>
                                     </div>
                                 </div>
                                 <div class="single-info-element">
-                                    <div class="icon pe-2">
+                                    <div class="icon ps-4">
                                         <i class="fal fa-envelope"></i>
                                     </div>
                                     <div class="text">
@@ -198,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div dir="ltr" class="call-us">
-                                    <div class="icon ps-2 text-white">
+                                    <div class="icon ps-4 text-white">
                                         <i class="fal fa-phone-volume"></i>
                                     </div>
                                     <div class="text">
