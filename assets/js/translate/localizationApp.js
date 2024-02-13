@@ -57,13 +57,28 @@ applyTranslations();
 
 function closeNav() {
   const mobileNav = document.getElementById('mobile-nav');
-  mobileNav.style.right = currentDirection === 'ltr' ? '350px' : '';
-  mobileNav.style.left = currentDirection === 'rtl' ? '350px' : '';
+
+  if(currentDirection== "ltr"){
+    mobileNav.style.left = '-375px';
+
+  }else{
+    mobileNav.style.left =  'unset';
+    mobileNav.style.right =  '-375px';
+  }
+
 }
 
 function apenNav() {
   const mobileNav = document.getElementById('mobile-nav');
-  mobileNav.style.right = currentDirection === 'ltr' ? '0px' : '';
-  mobileNav.style.left = currentDirection === 'rtl' ? '75px' : '';
+  if(currentDirection == 'ltr') {
+    mobileNav.style.left = '0px'
+  }  else {
+    mobileNav.style.left = 'unset'
+    mobileNav.style.right = '0px'
+  }
 }
+
+
+
+
 

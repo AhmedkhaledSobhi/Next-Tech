@@ -3148,7 +3148,7 @@ header.header-3 .main-menu ul > li > ul ul {
 }
 .mobile-nav.show {
   right: auto;
-  left: 0;
+  left: unset;
 }
 .mobile-nav .close-nav {
   border: 0;

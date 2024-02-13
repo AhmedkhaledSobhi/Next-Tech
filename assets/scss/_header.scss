@@ -835,8 +835,7 @@ header {
 
 .mobile-nav {
     position: fixed;
-    // right: -380px;
-    @if currentDirection == 'ltr' {
+    @if currentDirection == 'rtl' {
         right:-390px;
         left: 0px;
     } @else {
@@ -853,21 +852,15 @@ header {
     background: -webkit-linear-gradient(45deg,rgb(26, 53, 92),rgb(26, 105, 223)) !important;
     padding: 20px;
     z-index: 9999;
-    // box-shadow: 0 13px 35px -12px rgba(35,35,35,.15);
-
-    
 
     &.show {
-        // right: 0px;
-
         @if currentDirection == 'rtl' {
-            right: 0;
+            right: unset;
             left: auto;
         } @else {
             right: auto;
-            left: 0;
+            left: unset;
         }
-        
     }
 
     .close-nav {
@@ -953,6 +946,8 @@ header {
     }
 
 }
+
+
 
 #hamburger {
     color: $third-color;
